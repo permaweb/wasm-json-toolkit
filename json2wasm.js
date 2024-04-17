@@ -245,8 +245,8 @@ _exports.typeGenerators = {
    * @param {Stream} stream
    */
   memory: (json, stream) => {
-    leb.unsigned.write(Number(json.maximum !== undefined), stream) // the flags
-    leb.unsigned.write(json.intial, stream)
+    leb.unsigned.write(json.flags, stream)
+    leb.unsigned.write(json.initial, stream)
 
     if (json.maximum !== undefined) {
       leb.unsigned.write(json.maximum, stream)
