@@ -216,8 +216,13 @@ const OPCODES = _exports.OPCODES = {
   'i32.reinterpret/f32': 0xbc,
   'i64.reinterpret/f64': 0xbd,
   'f32.reinterpret/i32': 0xbe,
-  'f64.reinterpret/i64': 0xbf
-}
+  'f64.reinterpret/i64': 0xbf,
+  'i32.extend8_s': 0xc0,
+  'i32.extend16_s': 0xc1,
+  'i64.extend8_s': 0xc2,
+  'i64.extend16_s': 0xc3,
+  'i64.extend32_s': 0xc4
+};
 
 _exports.typeGenerators = {
   'function': (json, stream) => {
