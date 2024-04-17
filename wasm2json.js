@@ -346,8 +346,8 @@ _exports.typeParsers = {
   memory: (stream) => {
     const limits = {}
     limits.flags = leb.unsigned.readBn(stream).toNumber()
-    limits.intial = leb.unsigned.readBn(stream).toNumber()
-    if (limits.flags === 1) {
+    limits.initial = leb.unsigned.readBn(stream).toNumber()
+    if (limits.flags % 2 === 1) {
       limits.maximum = leb.unsigned.readBn(stream).toNumber()
     }
     return limits
