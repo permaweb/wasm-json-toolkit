@@ -1,5 +1,5 @@
 {
-  "name": "wasm-json-toolkit",
+  "name": "@permaweb/wasm-json-toolkit",
   "version": "0.2.9",
   "description": "this convertes wasm binaries to json and json to wasm binaries",
   "main": "index.js",
